@@ -10,7 +10,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none; border:none;
-    /* text-transform: capitalize; */
+    text-transform: none;
     transition: all .2s linear;
 }
 
@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:rgb(53, 58, 58);
+    background:#111;
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -52,11 +52,9 @@ section{
     background:#333;
     color:#fff;
     cursor: pointer;
-    margin-top: 31.5rem;
+    margin-top: 1rem;
     font-size: 2rem;
     border-radius: 5rem;
-    margin-left: -4.5rem;
-
 }
 
 .btn i{
@@ -68,18 +66,16 @@ section{
     background:var(--yellow);
 }
 
-/* copy of btn1 css */
-
+/* copy btn */
 .btn1{
     padding:.7rem 3rem;
     background:#333;
     color:#fff;
     cursor: pointer;
-    margin-top: 3rem;
+    margin-top: 31.5rem;
     font-size: 2rem;
     border-radius: 5rem;
-    margin-left: 1rem;
-
+    margin-left: -4.5rem;
 }
 
 .btn1 i{
@@ -91,33 +87,6 @@ section{
     background:var(--yellow);
 }
 
-
-/* end btn1 css */
-
-/* btn2 css */
-
-.btn2{
-    padding:.7rem 3rem;
-    background:#333;
-    color:#fff;
-    cursor: pointer;
-    margin-top: 3rem;
-    font-size: 2rem;
-    border-radius: 5rem;
-    margin-left: 1rem;
-
-}
-
-.btn2 i{
-    padding:0 .5rem;
-    font-size: 1.8rem;
-}
-
-.btn2:hover{
-    background:var(--yellow);
-}
-
-/* end btn 2 */
 
 
 .heading{
@@ -193,13 +162,13 @@ header .navbar ul li a:hover{
 #menu{
     position: fixed;
     top:2rem; right:2rem;
-    background:rgb(110, 98, 214);
-    color:rgb(234, 229, 225);
+    background:#333;
+    color:#fff;
     cursor: pointer;
     font-size: 2.5rem;
     padding:1rem 1.5rem;
     z-index: 1000;
-    display:flex;
+    display: flex;
 }
 
 .home{
@@ -209,18 +178,34 @@ header .navbar ul li a:hover{
     padding:0rem;
 }
 
+.home h3{
+    font-size: 2.5rem;
+    color:#fff;
+    top: 15rem;
+    left: 13rem;
+    position: absolute;
+}
 .home img{
-    height: 40px;
+    height:40px;
     width: 40px;
-    display:flex;
-    /* align-items:left; */
+    display: flex;
     float: left;
-    margin-left:15.5rem;
     margin-top: 25rem;
-    margin-right:-14.5rem;
+    margin-left: 15.5rem;
+    margin-right: -14.5rem;
+}
+.home h1{
+    font-size:5rem;
+    color:#fff;
+    top: 18rem;
+    left: 15rem;
+    position: absolute;
 }
 
-.bg-img{
+.home h1 span{
+    color:var(--yellow);
+}
+.home .bg-img{
     background-image: url("images1/Cyber-Security.jpg");
     min-height: 680px;
     min-width: 1100px;
@@ -233,39 +218,12 @@ header .navbar ul li a:hover{
     
 }
 
-.home h3{
-    font-size: 2.5rem;
-    color:#fff;
-    position:absolute;
-    top:15rem;
-    left: 13rem;
-}
-
-
-.home h1{
-    font-size:5rem;
-    color:#fff;
-    position:absolute;
-    top:18rem;
-    left: 15rem;
-}
-
-.home h1 span{
-    color:var(--yellow);
-}
-/* 
 .home p{
     font-size:2rem;
     color:#eee;
     padding: 1rem 0;
-} */
-
-
-.about p{
-    font-size: 2.4rem;
-    color:#eee;
-    padding: 1rem 0;
 }
+
 .about .row{
     display: flex;
     align-items: center;
@@ -279,13 +237,18 @@ header .navbar ul li a:hover{
     padding:2rem 1rem;
     padding-left: 6rem;
 }
- 
+
+.about p{
+    font-size: 2.4rem;
+    color:#eee;
+    padding: 1rem 0;
+}
 
 .about .row .info h3{
     font-size: 2rem;
     color:var(--yellow);
     padding:1rem 0;
-    /* font-weight: normal; */
+    font-weight: normal;
 }
 
 .about .row .info h3 span{
@@ -318,9 +281,7 @@ header .navbar ul li a:hover{
     color:#fff;
 }
 
-
-
- .skill .row{
+.skill .row{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -370,6 +331,12 @@ header .navbar ul li a:hover{
     font-size: 2rem;
     color:#fff;
 }
+
+
+
+
+
+
 
 
 .education .box-container{
@@ -460,7 +427,6 @@ header .navbar ul li a:hover{
     flex:1 1 30rem;
     padding:4rem;
     padding-bottom: 0;
-    margin-top: -20rem;
 }
 
 .contact .row form{
@@ -503,7 +469,6 @@ header .navbar ul li a:hover{
     color:#eee;
     padding:1rem 0;
     font-weight: normal;
-    
 }
 
 .contact .row .content .info h3 i{
@@ -517,6 +482,23 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media queries  */
